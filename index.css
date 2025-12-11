@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#form {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form input {
+    padding: 14px;
+    background: #334155;
+    border: 2px solid #475569;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+#form input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: #475569;
+}
+
+#form input::placeholder {
+    color: #94a3b8;
+}
+
+#btn {
+    padding: 14px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#btn:hover {
+    background: #2563eb;
+}
+
+#div-padre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#div-padre > div {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+#div-padre > div:hover {
+    transform: translateY(-2px);
+    border-color: #3b82f6;
+}
+.pUser {
+    font-size: 15px;
+    color: #e2e8f0;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    word-break: break-word;      /* evita que un correo largo dañe el diseño */
+    background: #334155;         /* sutil fondo */
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+}
+#btnDLocal {
+    display: block;
+    margin: 20px auto 40px;
+    padding: 14px 24px;
+    background: #ef4444;         /* rojo suave */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease;
+    max-width: 300px;
+    text-align: center;
+}
+
+#btnDLocal:hover {
+    background: #dc2626;         /* rojo más oscuro */
+    transform: translateY(-2px);
+}
+
+#btnDLocal:active {
+    transform: translateY(0);
+    background: #b91c1c;         /* rojo profundo */
+}
+.btnUser{
+    flex: 1;
+    padding: 10px 14px;
+    margin: 20px;
+    background: #3b82f6;     /* azul */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.btnUser:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+#formularioInput {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#formUpdate {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de JS</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="name" placeholder="Nombre completo..">
+        <input type="number" id="number" placeholder="Numero de celular">
+        <input type="email" id="email" placeholder="Correo electronico">
+        <button type="submit" id="btn" >Enviar</button>
+    </form>
+
+    <div id="formularioInput" style="display: none;">
+        <form id="formInput" >
+            <h1>Actualizar Usuario</h1>
+
+            <input type="text" id="inputName" placeholder="Nombre">
+            <input type="email" id="inputEmail" placeholder="Correo">
+            <input type="number" id="inputNumber" placeholder="Número">
+
+            <button type="button" onclick="updateUser()">Actualizar</button>
+            <button type="button" onclick="cerrarUpdate()">Cancelar</button>
+        </form>
+    </div>
+
+    <button id="btnDLocal">
+        DELETE LOCALSTORAGE
+    </button>
+    <div id="div-padre"></div>
+    <script src="index.js" type="module"></script>
+    <script>
+        const btn = document.getElementById("btnDLocal");
+
+        btn.addEventListener("click", ()=>{
+            localStorage.clear();
+            location.reload();
+        })
+    </script>
+</body>
+</html>
